@@ -4,3 +4,17 @@
   padding: 2rem;
   text-align: center;
 }
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  & img {
+    width: 100px;
+  }
+
+  & .card {
+    background-color: darkgray;
+    border-radius: 10px;
+  }
+}
