@@ -37,14 +37,6 @@ async function getPokemonsImgs(data) {
   }));
 }
 
-export function getPokemons() {
-  const pokemonsData = localStorage.getItem('pokemonCache');
-  if (pokemonsData) {
-    return JSON.parse(pokemonsData);
-  } else {
-    throw new Error('No data about Pokémon in localStorage!');
-  }
-}
 export function get12RandomPokemons(pokemonsArray) {
   if (pokemonsArray.length < 12) {
     throw new Error('Input array must have at least 12 elements.');
